@@ -1,0 +1,30 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,graphicx,hyperref}
+\usepackage[margin=2.5cm]{geometry}
+\title{Un espacio local para escribir}
+\author{Proyecto de ejemplo}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\input{sections/introduccion}
+\section{Una tabla de ejemplo}
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+\hline
+Herramienta & Uso \\
+\hline
+Historial & Comparar versiones \\
+Referencias & Incorporar BibTeX \\
+SyncTeX & Navegar desde el PDF \\
+\hline
+\end{tabular}
+\caption{Funciones para trabajar en un documento.}\label{tab:funciones}
+\end{table}
+La Tabla~\ref{tab:funciones} resume algunas herramientas.
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

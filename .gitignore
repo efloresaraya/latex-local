@@ -1,0 +1,31 @@
+# User documents, registry, configuration and recovery data
+/projects/
+/workspace.json
+**/.latex-local/
+.env
+.env.*
+!.env.example
+# Local environments and development output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+node_modules/
+.DS_Store
+*.log
+*.zip
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.out
+*.toc
+*.lof
+*.lot
+# Local registries may contain absolute paths; use LATEX_PROJECTS_DIR outside the repo.

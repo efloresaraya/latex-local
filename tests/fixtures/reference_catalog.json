@@ -1,0 +1,34 @@
+[
+  {
+    "id": "Example:Catalog2026",
+    "key": "Catalog2026",
+    "aliases": [
+      "Catalog2026"
+    ],
+    "sources": [
+      "Example"
+    ],
+    "title": "Catalog2026",
+    "description": "Synthetic test data",
+    "dois": [
+      "10.4321/catalog"
+    ],
+    "bibtex": "@article{Catalog2026, title={Synthetic catalog fixture}, author={Example, Author}, journal={Test Journal}, year={2026}, doi={10.4321/catalog}}",
+    "format": "BibTeX de prueba"
+  },
+  {
+    "id": "Example:Literal2026",
+    "key": "Literal2026",
+    "aliases": [
+      "Literal2026"
+    ],
+    "sources": [
+      "Example"
+    ],
+    "title": "Literal2026",
+    "description": "Synthetic test data",
+    "dois": [],
+    "bibtex": "@misc{Literal2026, note={Synthetic literal reference for automated tests.}}",
+    "format": "Transcripción de prueba"
+  }
+]

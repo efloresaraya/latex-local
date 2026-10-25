@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+source "$(cd "$(dirname "$0")" && pwd)/scripts/python-env.sh"
+exec "$PYTHON_BIN" "$APP_DIR/backend/cli.py" "$@"
