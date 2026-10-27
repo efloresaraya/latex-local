@@ -11,6 +11,7 @@ Pensado para tesis, artículos y documentos largos: código y PDF juntos, histor
 ## Qué incluye
 
 - Editor con pestañas, autocompletado de citas y referencias, árbol de archivos y esquema del documento.
+- Sugerencias automáticas de comandos LaTeX: clic, Enter o Tab insertan el comando y sitúan el cursor dentro de su primer argumento; Esc cierra la lista.
 - Compilación mediante `latexmk`, con pdfLaTeX, XeLaTeX, LuaLaTeX y la ruta LaTeX/DVIPS. Compila el documento principal aunque estés editando un capítulo.
 - PDF junto al código y navegación desde el PDF a la fuente con doble clic mediante SyncTeX.
 - Guardado automático, recuperación de borradores en el navegador y detección de cambios externos.

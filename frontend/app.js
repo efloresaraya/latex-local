@@ -40,10 +40,14 @@ function complete(cm){
  let m=line.match(/\\cite\w*\{([^}]*)$/);let list,from;
  if(m){const prefix=m[1].split(',').pop().trim();from=cursor.ch-prefix.length;list=state.refs.filter(r=>r.key.toLowerCase().startsWith(prefix.toLowerCase())).map(r=>({text:r.key,displayText:r.key+'  —  '+r.title.slice(0,80)}));}
  else if((m=line.match(/\\(?:ref|eqref|autoref)\{([^}]*)$/))){from=cursor.ch-m[1].length;list=state.labels.filter(x=>x.startsWith(m[1]));}
- else {m=line.match(/\\[A-Za-z]*$/);if(!m)return {list:[],from:cursor,to:cursor};from=cursor.ch-m[0].length;list=['\\section{}','\\subsection{}','\\subsubsection{}','\\chapter{}','\\cite{}','\\ref{}','\\label{}','\\textbf{}','\\textit{}','\\emph{}','\\begin{}','\\end{}','\\includegraphics[width=\\linewidth]{}'].filter(x=>x.startsWith(m[0]));}
+ else return LatexCompletion.hints(cm);
  return {list,from:CodeMirror.Pos(cursor.line,from),to:cursor};
 }
 state.labels=[];
+editor.on('inputRead',(cm,change)=>{
+ const doc=currentDoc();if(!doc||doc.loading||ext(doc.path)!=='tex')return;
+ if(LatexCompletion.shouldOpen(cm,change)&&!cm.state.completionActive)cm.showHint({hint:complete,completeSingle:false});
+});
 editor.on('beforeChange',(cm,change)=>{
  const doc=currentDoc();if(!doc||doc.loading||ext(doc.path)!=='tex'||doc.cm!==cm.getDoc())return;
  LatexAccents.beforeChange(cm,change);
