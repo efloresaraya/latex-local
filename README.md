@@ -23,6 +23,14 @@ Pensado para tesis, artículos y documentos largos: código y PDF juntos, histor
 - Conversión de acentos al escribir en `.tex` y botón para convertir los existentes con vista previa.
 - CLI y servidor MCP opcional para integraciones.
 
+## Demostraciones animadas
+
+[Ver las seis demostraciones](docs/funcionalidades.md): agrupar citas, detectar DOI duplicados, marcar etiquetas sin llamadas, comparar versiones y convertir tildes y ñ.
+
+![Unión de citas contiguas y anidadas, sin repetir claves](docs/animations/agrupar-citas.gif)
+
+Las capturas muestran la aplicación funcionando con documentos ficticios. La galería también incluye imágenes estáticas.
+
 ## Instalación
 
 Necesitas Python 3.10 o superior y una distribución TeX que incluya `latexmk`, BibTeX y SyncTeX. En macOS puedes usar MacTeX; en Linux, TeX Live con los paquetes que requiera tu documento. Windows nativo no está soportado: el almacenamiento utiliza `fcntl`.

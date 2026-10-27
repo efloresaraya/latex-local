@@ -1,0 +1,50 @@
+[
+  {
+    "file": "agrupar-citas.gif",
+    "title": "Agrupar referencias",
+    "steps": 4,
+    "frames": 32,
+    "duration_ms": 11120,
+    "size_bytes": 148509
+  },
+  {
+    "file": "referencias-duplicadas.gif",
+    "title": "Detectar referencias duplicadas",
+    "steps": 4,
+    "frames": 32,
+    "duration_ms": 11120,
+    "size_bytes": 537317
+  },
+  {
+    "file": "etiquetas-sin-referencia.gif",
+    "title": "Etiquetas sin llamadas en el texto",
+    "steps": 2,
+    "frames": 16,
+    "duration_ms": 6000,
+    "size_bytes": 112055
+  },
+  {
+    "file": "historial-versiones.gif",
+    "title": "Comparar y restaurar versiones",
+    "steps": 4,
+    "frames": 32,
+    "duration_ms": 11120,
+    "size_bytes": 425497
+  },
+  {
+    "file": "acentos-y-ene.gif",
+    "title": "Tildes, ñ y diéresis al escribir",
+    "steps": 4,
+    "frames": 32,
+    "duration_ms": 11120,
+    "size_bytes": 117355
+  },
+  {
+    "file": "convertir-acentos.gif",
+    "title": "Convertir los acentos existentes",
+    "steps": 4,
+    "frames": 32,
+    "duration_ms": 11120,
+    "size_bytes": 360095
+  }
+]
